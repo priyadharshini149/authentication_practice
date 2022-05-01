@@ -1,0 +1,72 @@
+<style>
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(28, 27, 27);
+    color: white;
+    border: none;
+  }
+  .main {
+    border-radius: 10px;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    background-color: burlywood;
+    align-items: center;
+  }
+  a {
+    width: 100%;
+  }
+  h5 {
+    font-size: 17px;
+  }
+  @media only screen and (max-width: 900px) {
+    .main {
+      width: 70%;
+    }
+  }
+</style>
+<body style="margin: 0px; background-color: black">
+  <div class="main">
+    <form action="/register" method="POST">
+      <div style="padding: 10px; margin: 0">
+        <center><h1>REGISTER</h1></center>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="name"
+          required
+        /><br /><br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        /><br /><br />
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+          required
+        /><br /><br />
+        <button type="submit">Register</button><br />
+      </div>
+      <h5 style="text-align: center">
+        All ready have an account <a href="/login">Login</a>
+      </h5>
+    </form>
+  </div>
+</body>
